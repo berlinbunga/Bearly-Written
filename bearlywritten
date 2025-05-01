@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BearlyWritten</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      color: #333;
     }
+
     header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
+      background-color: #4a4a4a;
+      color: white;
+      padding: 2rem;
       text-align: center;
     }
-    .content {
-      padding: 20px;
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
     .post {
       background: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
     }
+
     .post h2 {
       margin-top: 0;
     }
+
     footer {
       text-align: center;
-      padding: 10px;
-      background: #333;
-      color: #fff;
+      padding: 1rem;
+      background: #4a4a4a;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
@@ -42,20 +67,25 @@
 
   <header>
     <h1>BearlyWritten</h1>
-    <p>Welcome to my personal blog!</p>
+    <p>A cozy place for thoughts, stories, and ideas</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <div class="content">
     <div class="post">
-      <h2>First Blog Post</h2>
+      <h2>Welcome to BearlyWritten</h2>
       <p><em>May 1, 2025</em></p>
-      <p>This is my very first post on BearB. Stay tuned for more updates!</p>
+      <p>This is the beginning of my blogging journey. Stay tuned for reflections, short stories, and ideas straight from the Bear's mind.</p>
     </div>
-    <!-- Add more blog posts here -->
+    <!-- Add more posts here -->
   </div>
 
   <footer>
-    <p>© 2025 Bearly</p>
+    <p>© 2025 BearlyWritten</p>
   </footer>
 
 </body>
